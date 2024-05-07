@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <script>
+        function openPop() {
+                document.getElementById("popup1").style.display = "block";
+                }
+        function closePop() {
+                document.getElementById("popup1").style.display = "none";
+                }
+    </script>
+</head>
+<body>
+    <div id="intro"></div>
+    <div id="nav">
+        <a href="#b1" >menu1</a>
+        <a href="#b2">menu2</a>
+        <a href="#b3">menu3</a>
+        <a href="#b4">menu4</a>
+        <a href="#b5">menu5</a>
+    </div>
+    <!-- <div id="wrap"> -->
+        <div class="box" id="b1">
+            <div class="blank"></div>
+            <div class="view">
+                <div>
+                    <div id="title1">Gil Dong's </div>
+                    <div id="title2"> Portpolio </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="b2">
+            <div class="blank"></div>
+            <div class="view">
+                <ul class="pop">
+                    <li><a href="javascript:openPop();"><img src="img/blackwidow_icon.jpg" alt=""></a></li>
+                    <li><a href=""><img src="img/captin_icon.jpg" alt=""></a></li>
+                    <li><a href=""><img src="img/hulk_icon.jpg" alt=""></a></li>
+                    <li><a href=""><img src="img/ironman_icon.jpg" alt=""></a></li>
+                    <li><a href=""><img src="img/thor_icon.jpg" alt=""></a></li>
+                    
+                </ul>
+            </div>
+            <div id="popup1">
+                <div><img src="img/blackwidow.jpg" alt=""></div>
+                <a href="javascript:closePop();" class="close">close</a>
+            </div>
+
+        </div>
+        <div class="box" id="b3">
+            <div class="blank"></div>
+            <div class="view"></div>
+        </div>
+        <div class="box" id="b4">
+            <div class="blank"></div>
+            <div class="view"></div>
+        </div>
+        <div class="box" id="b5">
+            <div class="blank"></div>
+            <div class="view"></div>
+        </div>
+    <!-- </div> -->
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: 0;
+    box-sizing: border-box;
+    font-family: "맑은 고딕";
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+#intro{
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+body{
+    /* width: 100vw;
+    height: 100vh; */
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+    }
+    body::-webkit-scrollbar {
+        display: none; /* 크롬, 사파리, 오페라, 엣지 */
+    }
+
+#nav{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(255,255,255,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav a{
+    
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+}
+#wrap{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+    /* -ms-overflow-style: none; 인터넷 익스플로러 */
+    /* scrollbar-width: none; 파이어폭스 */
+    }
+/* #wrap::-webkit-scrollbar { */
+        /* display: none; 크롬, 사파리, 오페라, 엣지 */
+    /* } */
+
+.box{
+    width: 100vw;
+    height: 100vh;
+}
+.blank{
+    height: 100px;
+    background-color: blueviolet;
+}
+.view{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: brown;
+    position: relative;
+}
+.view:nth-child(even){
+    background-color: cadetblue;
+}
+
+.view>div{
+    width: 800px;
+    height: 400px;
+    background-color:blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -200px;
+
+}
+.view>div>div{
+    width: 800px;
+    height: 200px;
+
+
+}
+#title1{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 150px;
+    text-align: center;
+    line-height: 200px;
+}
+
+#title2{
+    font-family: 'Giants-Inline';
+    font-size: 150px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.pop{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#b2{
+    position: relative;
+}
+#popup1{
+    width: 100vw;     height: 100vh;     background-color:rgba(0,0,0,0.5);
+    position:absolute;     top: 0;     display: none;
+}
+
+#popup1 img{
+    display: block;     width: 80%;      position: absolute;
+    top: 50%;     left: 50%;     transform:translate(-50%, -50%) ;
+}
+
+.close{
+    display: block;     width: 100px;     height: 100px;
+    border-radius: 50%;     text-align: center;     line-height: 100px;
+    position: absolute;     bottom: 50px;     right: 50px;
+    background-color: aliceblue;
+}
